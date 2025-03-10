@@ -41,7 +41,7 @@
 
 ## 스터디원
 - [장준영](https://github.com/wns0901)
-- [김범순]()
+- [김범순](https://github.com/kp-of-s)
 - [김민혁](https://github.com/Minhyeok-Create)
 - [정문선](https://github.com/jms9901)
 - [박준우](https://github.com/MoonD1866)
