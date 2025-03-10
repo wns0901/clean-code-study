@@ -9,7 +9,7 @@
 - 이유: **세부 사항이 변경되더라도 인터페이스만 유지되면 외부 코드가 영향을 받지 않는다.**
 
 #### 예제 (좋은 자료 추상화)
-```cpp
+```java
 class Rectangle {
 private:
     int width, height;
@@ -43,7 +43,7 @@ public:
 - 즉, **연쇄적인 메서드 호출을 피하고 직접적으로 필요한 정보만 요청해야 한다**.
 
 #### 2. 예제 (잘못된 코드 - 기차 충돌)
-```cpp
+```java
 class Engine {
 public:
     void start() {}
@@ -61,7 +61,7 @@ void startCar(Car* car) {
 }
 ```
 #### 3. 개선된 코드
-```cpp
+```java
 class Car {
 public:
     void startEngine() { engine.start(); }
@@ -84,7 +84,7 @@ void startCar(Car* car) {
 - 이는 객체와 자료 구조의 **단점만 모아놓은 구조**로, 유지보수 및 확장이 어렵다.
 
 #### 2. 예제 (잘못된 잡종 구조)
-```cpp
+```java
 class Hybrid {
 public:
     int data;
@@ -94,7 +94,7 @@ public:
 - `data`가 공개되어 있어, 외부에서 직접 조작할 수 있다.
 
 #### 3. 개선된 코드
-```cpp
+```java
 class ProperEncapsulation {
 private:
     int data;
@@ -113,7 +113,7 @@ public:
 - **데이터베이스 또는 API에서 정보를 주고받을 때 주로 사용**.
 
 #### 1. 예제
-```cpp
+```java
 class UserDTO {
 public:
     std::string name;
@@ -124,7 +124,7 @@ public:
 - **빈(Bean) 객체**는 DTO와 유사하지만 **비공개 변수와 getter/setter를 포함**.
 
 #### 2. 예제 (빈 객체)
-```cpp
+```java
 class UserBean {
 private:
     std::string name;
