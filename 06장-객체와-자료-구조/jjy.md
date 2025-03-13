@@ -39,7 +39,7 @@ final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
 Options opts = ctxt.get0ptions();
 File scratchDir = opts.getScratchDir();
 final String outputDir = scratchDir.getAbsolutePath();
-```\
+```
 
 - 위 코드는 함수가 포함하는 정보가 많기 때문에 디미터의 법칙을 위반하는 것처럼 보임
 
