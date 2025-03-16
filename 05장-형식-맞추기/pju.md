@@ -38,7 +38,7 @@
 - 가능하다면 호출하는 함수를 호출되는 함수보다 먼저 배치한다.
 
 #### 예제 (종족 함수 배치)
-```cpp
+```java
 class Example {
 public:
     void startProcess() {
@@ -89,13 +89,13 @@ private:
 - 코드가 엉뚱한 부분을 강조하여 의도를 가릴 수 있음.
 
 #### 예제 (좋지 않은 코드)
-```cpp
+```java
 int     x     = 10;
 float   yyy   = 20.0;
 char    ch    = 'A';
 ```
 #### 예제 (좋은 코드)
-```cpp
+```java
 int x = 10;
 float yyy = 20.0;
 char ch = 'A';
@@ -109,7 +109,7 @@ char ch = 'A';
 - 파일 전체 → 개별 클래스 → 메서드 → 블록 내 블록 순으로 들여쓰기 적용.
 
 #### 예제 (올바른 들여쓰기)
-```cpp
+```java
 class Example {
 public:
     void function() {
