@@ -30,7 +30,7 @@ public void testLogAddAppender() {
 	Logger logger = Logger.getLogger("MyLogger");
     logger.removeAllAppenders();
     logger.addAppender(new ConsoleAppender(
-    	new PatternLayout("%p %t %m%n),
+    	new PatternLayout("%p %t %m%n"),
         ConsoleAppender.SYSTEM_OUT));
    	logger.info("hello");
   }
@@ -63,7 +63,7 @@ public class LogTest {
           @Test
           public void addAppenderWithoutStream() {
           	logger.addAppender(new ConsoleAppender(
-            	new PatternLayout("%p %t %m%n)));
+            	new PatternLayout("%p %t %m%n")));
                 logger.info("addAppenderWithoutStream");
          }
        }
