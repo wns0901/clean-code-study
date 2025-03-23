@@ -30,14 +30,14 @@ public void testLogAddAppender() {
 	Logger logger = Logger.getLogger("MyLogger");
     logger.removeAllAppenders();
     logger.addAppender(new ConsoleAppender(
-    	new PatternLayout("%p %t %m%n),
+    	new PatternLayout("%p %t %m%n"),
         ConsoleAppender.SYSTEM_OUT));
    	logger.info("hello");
   }
   
 // 여러 번의 테스트 결과 설정되지 않은 생성자, 인수 문제 확인 후 단위 테스트
 public class LogTest {
-	privat Logger logger;
+	private Logger logger;
     
     @Before
     public void initialize() {
@@ -63,7 +63,7 @@ public class LogTest {
           @Test
           public void addAppenderWithoutStream() {
           	logger.addAppender(new ConsoleAppender(
-            	new PatternLayout("%p %t %m%n)));
+            	new PatternLayout("%p %t %m%n")));
                 logger.info("addAppenderWithoutStream");
          }
        }
