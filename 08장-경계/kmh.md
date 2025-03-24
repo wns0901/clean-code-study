@@ -37,7 +37,7 @@ public void testLogAddAppender() {
   
 // 여러 번의 테스트 결과 설정되지 않은 생성자, 인수 문제 확인 후 단위 테스트
 public class LogTest {
-	privat Logger logger;
+	private Logger logger;
     
     @Before
     public void initialize() {
